@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"); /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -362,8 +362,121 @@ td {
 }
 
 /*# sourceMappingURL=formalize.css.map */
-.Title {
-  background: pink;
+.Frame {
+  padding: 30px;
+  background: #E1CDBF;
+}
+
+.power-icon {
+  margin-top: 14.5px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  fill: rgb(255, 255, 255);
+  width: 39px;
+  height: 40px;
+}
+.power-icon-fill {
+  fill: white;
+}
+
+.Screen {
+  background: aliceblue;
+  display: flex;
+  width: 1720px;
+  height: 880px;
+  border-radius: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/backgroud.gif");
+}
+.Screen-taskbar {
+  width: 1720px;
+  height: 70px;
+  background: rgba(43, 80, 106, 0.9);
+  margin-bottom: -1;
+  margin-top: auto;
+  border-bottom-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  display: flex;
+}
+.Screen-taskbar-buttons-start {
+  display: flex;
+  width: 193px;
+  height: 70px;
+  border-bottom-left-radius: 36px;
+  background: rgb(78, 100, 144);
+  box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.Screen-taskbar-buttons-start-text {
+  margin-left: 10px;
+  font-size: 20px;
+  margin-top: 26%;
+  transform: translateY(-125%);
+}
+.Screen-taskbar-buttons-about {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 240px;
+  height: 60px;
+  border-radius: 10px;
+  background: rgb(78, 100, 144);
+  box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+  margin-left: 10px;
+}
+.Screen-taskbar-buttons-about-icon {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.Screen-taskbar-buttons-about-text {
+  margin-top: 50px;
+}
+.Screen-taskbar-buttons-project {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 240px;
+  height: 60px;
+  border-radius: 10px;
+  background: rgb(78, 100, 144);
+  box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+  margin-left: 10px;
+}
+.Screen-taskbar-buttons-contact {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 240px;
+  height: 60px;
+  border-radius: 10px;
+  background: rgb(78, 100, 144);
+  box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+  margin-left: 10px;
+}
+.Screen-taskbar-buttons-date {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 0;
+  margin-left: auto;
+  padding-top: 12px;
+  width: 240px;
+  height: 70px;
+  border-bottom-right-radius: 36px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: -11px 0px 9px -1px rgba(0, 0, 0, 0.7);
+  background: rgb(78, 100, 144);
+}
+.Screen-taskbar-buttons-date-clock {
+  display: flex;
+  margin-left: -100%;
+  transform: translateX(55%);
+  margin-right: auto;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: "Press Start 2P", cursive;
+  letter-spacing: 4px;
 }
 
 /*# sourceMappingURL=main.css.map */
