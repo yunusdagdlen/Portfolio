@@ -1,4 +1,59 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"); /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"); /*! formalize.css | MIT License | github.com/interacthings/formalize */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre, fieldset, ul, ol, menu, form {
+  margin: 0;
+}
+
+button, fieldset, iframe {
+  border: 0;
+}
+
+fieldset, ul, ol, button, menu {
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  padding: 0;
+}
+
+/*# sourceMappingURL=formalize.css.map */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -307,69 +362,14 @@ template {
   display: none;
 }
 
-/*! formalize.css | MIT License | github.com/interacthings/formalize */
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  text-rendering: optimizeLegibility;
-}
-
-body {
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  vertical-align: middle;
-}
-
-blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre, fieldset, ul, ol, menu, form {
-  margin: 0;
-}
-
-button, fieldset, iframe {
-  border: 0;
-}
-
-fieldset, ul, ol, button, menu {
-  padding: 0;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-textarea {
-  resize: vertical;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td {
-  padding: 0;
-}
-
-/*# sourceMappingURL=formalize.css.map */
 .Frame {
   padding: 30px;
   background: #E1CDBF;
 }
 
 .power-icon {
-  margin-top: 14.5px;
-  margin-bottom: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: 15px;
   fill: rgb(255, 255, 255);
   width: 39px;
@@ -382,15 +382,15 @@ td {
 .Screen {
   background: aliceblue;
   display: flex;
-  width: 1720px;
-  height: 880px;
+  max-width: 1820px;
+  max-height: 1080px;
+  min-height: 880px;
   border-radius: 36px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   background-image: url("../img/backgroud.gif");
 }
 .Screen-taskbar {
-  width: 1720px;
+  width: 100%;
   height: 70px;
   background: rgba(43, 80, 106, 0.9);
   margin-bottom: -1;
@@ -412,47 +412,66 @@ td {
   border-top-right-radius: 10px;
 }
 .Screen-taskbar-buttons-start-text {
+  display: inline-flex;
   margin-left: 10px;
   font-size: 20px;
-  margin-top: 26%;
-  transform: translateY(-125%);
+  align-items: center;
 }
 .Screen-taskbar-buttons-about {
   margin-top: auto;
   margin-bottom: auto;
-  width: 240px;
+  width: 210px;
   height: 60px;
   border-radius: 10px;
   background: rgb(78, 100, 144);
   box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
   margin-left: 10px;
+  display: flex;
 }
 .Screen-taskbar-buttons-about-icon {
-  margin-top: 5px;
   margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 40px;
+  height: 39px;
 }
 .Screen-taskbar-buttons-about-text {
-  margin-top: 50px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.Screen-taskbar-buttons-about:hover {
+  background: rgba(26, 125, 187, 0.95);
 }
 .Screen-taskbar-buttons-project {
   margin-top: auto;
   margin-bottom: auto;
-  width: 240px;
+  width: 220px;
   height: 60px;
   border-radius: 10px;
   background: rgb(78, 100, 144);
   box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
   margin-left: 10px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+.Screen-taskbar-buttons-project:hover {
+  background: rgba(26, 125, 187, 0.95);
 }
 .Screen-taskbar-buttons-contact {
   margin-top: auto;
   margin-bottom: auto;
-  width: 240px;
+  width: 200px;
   height: 60px;
   border-radius: 10px;
   background: rgb(78, 100, 144);
   box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
   margin-left: 10px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+.Screen-taskbar-buttons-contact:hover {
+  background: rgba(26, 125, 187, 0.95);
 }
 .Screen-taskbar-buttons-date {
   margin-top: auto;

@@ -20,11 +20,18 @@
                 <span class="Screen-taskbar-buttons-start-text">START</span>
             </div>
             <div class="Screen-taskbar-buttons-about">
-                <img class="Screen-taskbar-buttons-about-icon" src="img/icons/explorer%202.png" alt="bla bla bla">
+                <img class="Screen-taskbar-buttons-about-icon" src="img/icons/explorer.png" alt="bla bla bla">
                 <span class="Screen-taskbar-buttons-about-text">About Me</span>
             </div>
-            <div class="Screen-taskbar-buttons-project"></div>
-            <div class="Screen-taskbar-buttons-contact"></div>
+            <button class="Screen-taskbar-buttons-project">
+                <img src="img/icons/directory_open.png" alt="">
+                Projects
+            </button>
+            <button class="Screen-taskbar-buttons-contact">
+                <img src="img/icons/phone.png" alt="">
+                Contact
+            </button>
+
             <div class="Screen-taskbar-buttons-date">
                 <span id="Clock" class="Screen-taskbar-buttons-date-clock">--:--</span>
                 <span id="date" class="Screen-taskbar-buttons-date-clock">--:--:--</span>
@@ -40,7 +47,7 @@
 
     function showTime() {
         setInterval(function () {
-            clock = moment().format('h:mm a')
+            clock = moment().format('hh:mm a')
             date = moment().format('DD/MM/YY')
             $('#Clock').text(clock)
             $('#date').text(date)

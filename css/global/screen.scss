@@ -1,15 +1,16 @@
 .Screen {
   background: aliceblue;
   display: flex;
-  width: 1720px;
-  height: 880px;
+  max-width: $screen-width;
+  max-height: 1080px;
+  min-height: 880px;
   border-radius: 36px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+
   background-image: url("../img/backgroud.gif");
 
   &-taskbar {
-    width: 1720px;
+    width: 100%;
     height: 70px;
     background: $taskbar-blue;
     margin-bottom: -1;
@@ -29,53 +30,80 @@
       box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
       border-bottom-right-radius: 10px;
       border-top-right-radius: 10px;
-      &-text{
-        margin-left:10px;
+
+      &-text {
+        display: inline-flex;
+        margin-left: 10px;
         font-size: 20px;
-        margin-top: 26%;
-        transform: translateY(-125%);
+        align-items: center;
       }
     }
 
     &-buttons-about {
+
       margin-top: auto;
       margin-bottom: auto;
-      width: $button-width;
+      width: 210px;
       height: $button-heigth;
       border-radius: 10px;
       background: $button-blue;
       box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
       margin-left: $gutter;
-      &-icon{
-        margin-top: 5px;
+      display: flex;
+
+      &-icon {
+        margin-left: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 40px;
+        height: 39px;
+      }
+
+      &-text {
+        display: inline-flex;
+        align-items: center;
         margin-left: 10px;
       }
-      &-text{
-        margin-top:50px;
+
+      &:hover {
+        background: $hover-color;
       }
     }
 
     &-buttons-project {
       margin-top: auto;
       margin-bottom: auto;
-      width: $button-width;
+      width: 220px;
       height: $button-heigth;
       border-radius: 10px;
       background: $button-blue;
       box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
       margin-left: $gutter;
+      color: $white;
+      align-items: center;
+
+      &:hover {
+        background: $hover-color;
+      }
     }
 
     &-buttons-contact {
       margin-top: auto;
       margin-bottom: auto;
-      width: $button-width;
+      width: 200px;
       height: $button-heigth;
       border-radius: 10px;
       background: $button-blue;
       box-shadow: 11px 0px 9px -1px rgba(0, 0, 0, 0.7);
       margin-left: $gutter;
+      color: $white;
+      align-items: center;
+
+      &:hover {
+        background: $hover-color;
+      }
     }
+
 
     &-buttons-date {
       margin-top: auto;
