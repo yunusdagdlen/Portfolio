@@ -362,6 +362,10 @@ template {
   display: none;
 }
 
+body {
+  overflow: hidden;
+}
+
 .Frame {
   padding: 30px;
   background: #E1CDBF;
@@ -386,7 +390,8 @@ template {
   max-height: 1080px;
   min-height: 880px;
   border-radius: 36px;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
   background-image: url("../img/backgroud.gif");
 }
 .Screen-taskbar {
@@ -496,6 +501,64 @@ template {
   font-size: 20px;
   font-family: "Press Start 2P", cursive;
   letter-spacing: 4px;
+}
+
+.Tab-about {
+  display: flex;
+  background: rgb(239, 233, 228);
+  width: 1220px;
+  height: 680px;
+  position: absolute;
+  right: 150px;
+  top: 80px;
+  border-radius: 15px;
+  border: 0.5px solid rgba(43, 80, 106, 0.9);
+  visibility: hidden;
+}
+.Tab-about-header {
+  display: flex;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  width: 100%;
+  top: 0px;
+  height: 40px;
+  z-index: 20;
+  background: rgba(50, 50, 50, 0.76);
+}
+.Tab-about-header-button {
+  position: absolute;
+  border-radius: 5px;
+  background: red;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+  top: 5px;
+  right: 15px;
+  float: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: auto;
+  width: 29px;
+  height: 29px;
+}
+.Tab-about-header-button-icon {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 23px;
+  height: 27px;
+}
+.Tab-about-header-button:hover {
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
