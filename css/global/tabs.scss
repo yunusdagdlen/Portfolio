@@ -21,7 +21,20 @@
     background: rgba(50, 50, 50, 0.76);
 
     &-tab {
-
+      display: inline-flex;
+      position: absolute;
+      width: 172px;
+      height: 33px;
+      top: 7px;
+      left: 12px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      background: rgba(50,50,50,0.8);
+      &-text{
+        font-family: $font;
+        color: $white;
+        margin: auto;
+      }
     }
 
     &-button {
@@ -45,6 +58,7 @@
         margin-right: auto;
         width: 23px;
         height: 27px;
+        cursor: pointer;
       }
 
       &:hover {
@@ -53,14 +67,72 @@
     }
   }
 }
-
-
-.hide {
+.Tab-Projects {
+  display: flex;
+  background: rgba(239, 233, 228);
+  width: 1220px;
+  height: 680px;
+  position: absolute;
+  right: 150px;
+  top: 80px;
+  border-radius: 15px;
+  border: 0.5px solid $taskbar-blue;
   visibility: hidden;
-  opacity: 0;
-}
 
-.show {
-  visibility: visible;
-  opacity: 1;
+  &-header {
+    display: flex;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    width: 100%;
+    top: 0px;
+    height: 40px;
+    z-index: 20;
+    background: rgba(50, 50, 50, 0.76);
+
+    &-textbox{
+      display: inline-flex;
+      position: absolute;
+      top: 7px;
+      left: 12px;
+      &-text{
+        align-items: center;
+        font-family: $font;
+        font-size: 16px;
+        color: $white;
+        margin-top: 4px;
+      }
+    }
+
+    &-button {
+      position: absolute;
+      border-radius: 5px;
+      background: red;
+      box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+      top: 5px;
+      right: 15px;
+      float: right;
+      margin-top: auto;
+      margin-bottom: auto;
+      left: auto;
+      width: 29px;
+      height: 29px;
+
+      &-icon {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 23px;
+        height: 27px;
+        cursor: pointer;
+      }
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+      }
+    }
+  }
+  &-Sidebar{
+
+  }
 }
