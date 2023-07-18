@@ -1,11 +1,13 @@
 body{
-  overflow:hidden
+  overflow:hidden;
+  font-family: $font;
 }
 
 
 .Frame{
   padding: 30px;
   background: $frame-color;
+  z-index:100;
 }
 
 .power-icon{
@@ -18,4 +20,11 @@ body{
   &-fill{
     fill: white;
   }
+}
+
+.try{
+  background-color: pink;
+  border: 3px solid black;
+  width: 15px;
+  height: 15px;
 }
